@@ -6,3 +6,6 @@ require 'guide'
 # require File.join(APP_ROOT, 'lib', 'guide')
 
 # require "#{APP_ROOT}/lib/guide"
+
+guide = Guide.new('restaurants.txt')
+guide.launch!
