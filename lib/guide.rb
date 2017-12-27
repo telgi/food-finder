@@ -6,8 +6,8 @@ class Guide
 # flexibility in creating additional guides
   def initialize(path=nil)
     # locate the restaurant text file at path
-    restaurant.filepath = path
-    if Restaurant.file_exists?
+    Restaurant.filepath = path
+    if Restaurant.file_usable?
       puts "Found Restaurant File."
     # or create a new file
     elsif Restaurant.create_file
